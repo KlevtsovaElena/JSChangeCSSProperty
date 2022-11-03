@@ -58,6 +58,16 @@ function pinkFrame(){
     element.style.boxShadow="0 15px 20px rgba(236, 49, 183, 0.4)"
 
 }
+function showPrice(){
+    element.innerHTML="5000 руб.";
+    event.target.style.display="none";
+    document.getElementById("hiddenPrice").style.display="inline-block";
+}
+function hiddenPrice(){
+    element.innerHTML="";
+    event.target.style.display="none";
+    document.getElementById("showPrice").style.display="inline-block";
+}
 
 /* сброс настроек, присваиванием исходных значений
 function resetMirror(){

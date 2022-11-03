@@ -45,6 +45,9 @@ header{
 .fullscreen{
     height: 100vh;
 }
+#hiddenPrice{
+    display: none;
+}
 .container{
 
     display: flex;
@@ -69,6 +72,9 @@ header{
 
 #mirror{
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
     top: 170px;
     width: 100px;
@@ -124,6 +130,11 @@ header{
 
 
 @media(max-width: 700px){
+    .background-img{
+        background-image: url('../img/background-small.jpg');
+        width: 700px;
+        height: 511px;
+    }
     button{
         width: 100px;
         height: 35px; 
@@ -135,7 +146,16 @@ header{
     .btn-property{
        max-width: 110px; 
     }
+    h2{
+        font-size: 18px;
+    }
+    #mirror{
+        top: 150px;
+        left: 30%;
+        width: 70px;
+        height: 70px;
+    }
 }
-@media(max-width: 550px){
-
+@media(max-width: 650px){
+    
 }
