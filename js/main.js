@@ -42,7 +42,7 @@ function hiddenMirror(){
     element.style.display="none";
 }
 function showMirror(){
-    element.style.display="block";
+    element.style.display="flex";
 }
 function whiteFrame(){
     element.style.borderColor="#ffffff";
