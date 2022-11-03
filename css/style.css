@@ -2,29 +2,18 @@
 	font-family: 'Kalligraf'; 
 	src: url('../font/Lobster-Regular.ttf'); 
 }
-
 body{
     margin: 0;
     padding: 0;
     background-color: rgb(250, 250, 240);
     font-family: 'Kalligraf';
     color: #000015;
-
 }
-footer{
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    background-color: #fff4f0;
-}
-h2, h3{
-    margin: 3px;
-}
+h2, h3{margin: 3px;}
 button{
     margin: 3px;
-    width: 120px;
-    height: 40px;
+    width: 115px;
+    height: 33px;
     border-radius: 30px;
     border: none;
     box-shadow: 0 15px 20px 0 rgba(0, 40, 120, 0.35);
@@ -39,47 +28,39 @@ button:hover{
 }
 header{
     height: auto;
-
     padding-top: 10px;
 }
-.fullscreen{
-    height: 100vh;
-}
-#hiddenPrice{
-    display: none;
-}
 .container{
-
     display: flex;
-    width: 100%;
-    justify-content: center;
     align-items: center;
 }
-.btn-property{
+footer{
+    margin: 0;
+    padding: 10px;
     text-align: center;
+    width: 100%;
+    background-color: #fff4f0;
 }
+#hiddenPrice{display: none;}
+.btn-property{text-align: center;}
 .background-img{
     position: relative;
     display: flex;
     justify-content: center;
-    width: 1000px;
-    height: 672px;
-    background-image: url('../img/background.jpg');
+    width: 1100px;
+    height: 651px;
+    background-image: url('../img/background2.jpg');
     background-size: cover;
     background-position: center center;
 }
-
 #mirror{
     position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    top: 170px;
+    top: 150px;
     width: 100px;
     height: 100px;
-    margin-left: auto;
-    margin-right: auto;
     background-image: url('../img/fonMirror.jpg');
     background-size: cover;
     background-position: center center;
@@ -88,13 +69,14 @@ header{
 }
 .btn-container{
     padding: 10px 10px 30px;
+    flex-grow: 1;
 }
 
 
 @media(max-width: 1150px){
     .container{
         flex-direction: column;
-        align-items: center;
+        justify-content: center;
     }
     .btn-container{
         display: flex;
@@ -104,18 +86,17 @@ header{
 }
 @media(max-width: 1000px){
     .background-img{
-        width: 850px;
-        height: 571px;
+        width: 850;
+        height: 592px;
     }
-    #mirror{top: 70px;}
 }
 @media(max-width: 850px){
     .background-img{
-        width: 700px;
-        height: 470px;
+        width: 800px;
+        height: 474px;
     }
     #mirror{
-        top: 60px;
+        top: 120px;
         width: 70px;
         height: 70px;
     }
@@ -138,8 +119,8 @@ header{
     h2{font-size: 18px;}
     h3{font-size: 16px;}
     #mirror{
-        top: 150px;
-        left: 30%;
+        top: 120px;
+        left: 25%;
         width: 70px;
         height: 70px;
     }
