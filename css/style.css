@@ -1,0 +1,141 @@
+@font-face {
+	font-family: 'Kalligraf'; 
+	src: url('../font/Lobster-Regular.ttf'); 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:beige;
+    font-family: 'Kalligraf';
+    color: #000015;
+
+}
+footer{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background-color: cornsilk;
+}
+h2, h3{
+    margin: 3px;
+}
+button{
+    margin: 3px;
+    width: 120px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 15px 20px 0 rgba(0, 40, 120, 0.35);
+    transition: 0.3s;
+    background-color: ghostwhite;
+}
+button:hover{
+    background-color:cornsilk;
+    box-shadow: 0 15px 20px 0 rgba(236, 49, 183, 0.4);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
+header{
+    height: auto;
+
+    padding-top: 10px;
+}
+.fullscreen{
+    height: 100vh;
+}
+.container{
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.btn-property{
+    text-align: center;
+}
+.background-img{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 672px;
+    background-image: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center center;
+ 
+}
+
+#mirror{
+    position: absolute;
+    color: black;
+    top: 170px;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('../img/fonMirror.jpg');
+    background-size: cover;
+    background-position: center center;
+    border: 5px solid #ffffff;
+    box-shadow: 0 15px 30px  rgba(255, 255, 255, 0.8);
+}
+.btn-container{
+    padding: 10px 10px 30px;
+
+    flex-grow: 1;
+}
+
+
+@media(max-width: 1150px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-container{
+        display: flex;
+        justify-content: center;
+
+    }
+
+}
+@media(max-width: 1000px){
+    .background-img{
+        width: 850px;
+        height: 571px;
+    }
+    #mirror{
+        top: 70px;
+
+    }
+}
+@media(max-width: 850px){
+    .background-img{
+        width: 700px;
+        height: 470px;
+    }
+    #mirror{
+        top: 60px;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+@media(max-width: 700px){
+    button{
+        width: 100px;
+        height: 35px; 
+        font-size: 12px;
+    }
+    .btn-container{
+        flex-wrap:wrap;
+    }
+    .btn-property{
+       max-width: 110px; 
+    }
+}
+@media(max-width: 550px){
+
+}

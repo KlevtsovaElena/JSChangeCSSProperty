@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-change-property</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="background-img">
+            <header> <h2>Здесь Вы можете посмотреть наши зеркала в интерьере</h2></header>
+            <div id="mirror"></div>
+        </div>
+        <div class="btn-container">
+            <div class="orientationMirror btn-property">
+                <h3>Ориентация</h3>
+                <button onclick="changeHeight()">Вертикальное</button>
+                <button onclick="changeWidth()">Горизонтальное</button>
+                <button onclick="bigSize()">Равностороннее</button>
+            </div>
+            <div class="formMirror btn-property">
+                <h3>Рамка</h3>
+                <button onclick="makeRounded()">Округлая</button>
+                <button onclick="makeRound()">Круглая</button>
+                <button onclick="makeBox()">Прямоугольная</button>
+            </div>
+            <div class="colorMirror btn-property">
+                <h3>Подсветка</h3>
+                <button onclick="whiteFrame()">Белая</button>
+                <button onclick="blueFrame()">Голубая</button>
+                <button onclick="pinkFrame()">Розовая</button>
+            </div>
+            <div class="sizeMirror btn-property">
+                <h3>Размер</h3>
+                <button onclick="bigSize()">Большой</button>
+                <button onclick="smallSize()">Маленький</button>
+                <button>Показать</button>
+            </div>
+            <div class="showMirror btn-property">
+                <h3>Другое</h3>
+                <button onclick="hiddenMirror()">Скрыть</button>
+                <button onclick="showMirror()">Показать</button>
+                <button onclick="resetMirror()">RESET</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div><h2>Салон зеркал Mirror</h2></div>
+        <div>tel: 8-999-99-99-99</div>
+    </footer>
+
+    <script src="js/main.js"></script> 
+</body>
+</html>
